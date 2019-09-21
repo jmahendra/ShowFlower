@@ -1,0 +1,9 @@
+<div class="container">
+    <div class="col-md-3 float-left">
+    <div class="card card-body  " *ngFor="let one of user">
+            <img src="{{one.img}}" class="card-mgg-top" (mouseover)=send(one) alt="">
+            <h4>{{one.name}}</h4>
+    </div>
+</div>
+    <app-asses2 [data]='arrayData'></app-asses2>
+</div>
